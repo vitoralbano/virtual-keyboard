@@ -12,6 +12,8 @@
   .capslock .vtkb-key[data-vtkb-key^=mode],
   .shiftmode .vtkb-key[data-vtkb-key^=mode],
   .capslock.shiftmode .vtkb-key[data-vtkb-key^=mode],
+  .capslock.shiftmode #vtkb-mode-email .vtkb-key,
+  .shiftmode #vtkb-mode-email .vtkb-key,
   .capslock #vtkb-mode-email .vtkb-key{
     text-transform: unset;
   }
