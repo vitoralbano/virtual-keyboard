@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/virtual-keyboard.css">
+    <title>Hello, Virtual Keyboard</title>
+    <style>
+        .vtkb-key {
+            background: rgba(120, 120, 120, .5);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="container">
+            <h1>Hello, Virtual Keyboard!</h1>
+            <p>Just a simple virtual keyboard with CSS + Bootstrap + Vanilla JS.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <h2>Samples of use:</h2>
+            <div class="form-group">
+                <h4>Email mode:</h3>
+                <label for="exampleInputEmail1">An input with attribute "data-vtkb-mode='email'" and it will show only valid email characters. </label>
+                <input type="text" data-vtkb-mode="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <h4>Standard mode:</h4>
+                <label for="exampleInputEmail1">In Standard mode will be shown a 'QWERTY' keyboard layout and 'Symbol' mode key.</label>
+                <input type="text" data-vtkb-mode="standard" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+        </div>
+    </div>
+
+    <div id="vtkb"></div>
+    <script src="js/virtual-keyboard.js"></script>
+    <script>
+        VirtualKeyboard.init();
+        
+    </script>
+</body>
+</html>
